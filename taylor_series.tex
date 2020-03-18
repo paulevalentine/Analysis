@@ -8,20 +8,19 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Taylor series expands a function about a point $a$ as a polynomial. This is useful as an analytical tool to make approximations about the function at a point. 
+Taylor series expands a function about a point $a$ as a polynomial. This is useful as an analytical tool to make approximations about the function at a point.
 \end{abstract}
 \section{Derivation of the single variable case}
-
 Consider estimate a function $f(x)$ local to the point $f(a)$. Take the linear approximation.
 \begin{align}
 &f(x) = f(a)+f'(a)(x-a)
 \end{align}
-To improve accuracy consider a polynomial expansion 
+To improve accuracy consider a polynomial expansion
 \begin{equation}
 \label{eq1}
 f(x)=\sum_{n=0}^{n=\infty}	c_n (x-a)^n
 \end{equation}
-The problem then becomes how to calculate the coefficients. To test a solution differentiate an expansion in a set number of terms and then differentiate. 
+The problem then becomes how to calculate the coefficients. To test a solution differentiate an expansion in a set number of terms and then differentiate.
 \begin{align}
 &f(x) = c_0 + c_1 (x-a) + c_2 (x-a)^2 + c_3 (x-a)^3 + c_4 (x-a)^4\cdots\label{eq2}\\
 &f'(x) = c_1 + 2 c_2 (x-a) + 3c_3 (x-a)^2 +4c_4 (x-a)^3 \cdots\\
