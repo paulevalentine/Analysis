@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsthm}
+\usepackage{cite}
+\title{\textbf{Vector Spaces}\\(A003)}
+\author{Paul Valentine}
+\date{18 March 2020}
+\begin{document}
+\maketitle
+\section{Introduction}
+A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. If $a \in \mathbb{R}$ then a real vector space is defined. If $a \in \mathbb{C}$ then a complex vector space exists. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent directoins is the dimension of the vector space.
+\section{Operations}
+\label{operations}
+\begin{equation}
+  \label{add}
+  +:V \times V \to V
+\end{equation}
+Equation \ref{add} defines the addition rule where $\times$ is the cartesian production\cite{A002} where $V$ is a set. With a field $F$ we have.
+\begin{equation}
+  \cdot : F \times V \to V
+\end{equation}
+Where $\cdot$ represents scalar multiplication. If $F$ is a complex field then we have a complex vector space. If $F$ is a real number field then we have a real vector space.
+\begin{align}
+  \text{Associativity of addition: } &\hat{u}+(\hat{v}+\hat{w}) = (\hat{u}+\hat{v})+\hat{w}\\
+  \text{Commutativity of addition: }&\hat{u}+\hat{v} = \hat{v}+\hat{u}
+\end{align}
+\section{Axioms}
+For the set $V$ to form a vector space the operations $+$ and $\cdot$ must conform to the following axioms:
+\bibliography{bibrefs}
+\bibliographystyle{ieeetr}
+\end{document}
