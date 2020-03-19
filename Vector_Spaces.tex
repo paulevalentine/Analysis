@@ -10,24 +10,39 @@
 \begin{document}
 \maketitle
 \section{Introduction}
-A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. If $a \in \mathbb{R}$ then a real vector space is defined. If $a \in \mathbb{C}$ then a complex vector space exists. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent directoins is the dimension of the vector space.
-\section{Operations}
+A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent directoins is the dimension of the vector space. Two operations are defined on this space $\cdot$ and $+$.
+\section{Operations $\cdot$ and $+$}
+Let $V$ be an ordered set.
 \label{operations}
 \begin{equation}
   \label{add}
   +:V \times V \to V
 \end{equation}
-Equation \ref{add} defines the addition rule where $\times$ is the cartesian production\cite{A002} where $V$ is a set. With a field $F$ we have.
+Equation \ref{add} defines the addition rule where $\times$ is the cartesian production\cite{A002} and $V$ is a set. For example.
+\begin{equation}
+  +:\big((x_1, y_1),(x_2,y_2)\big) = \big((x_1+x_2,y_1+y_2)\big)
+\end{equation}
+ With a \textbf{field}\cite{wiki:mathfield} $F$ we have.
 \begin{equation}
   \cdot : F \times V \to V
 \end{equation}
-Where $\cdot$ represents scalar multiplication. If $F$ is a complex field then we have a complex vector space. If $F$ is a real number field then we have a real vector space.
-\begin{align}
-  \text{Associativity of addition: } &\hat{u}+(\hat{v}+\hat{w}) = (\hat{u}+\hat{v})+\hat{w}\\
-  \text{Commutativity of addition: }&\hat{u}+\hat{v} = \hat{v}+\hat{u}
-\end{align}
+Where $\cdot$ represents scalar multiplication. If $F$ is a complex field then we have a complex vector space. If $F$ is a real number field then we have a real vector space. A field is a set on which addition, subtraction, multiplication and division are defined. That it is, it is an albelian group with $0$ as the additive identity and $1$ as the multiplicative identity. Example:
+\begin{equation}
+\forall a\in \mathbb{R}  \cdot:\big(a,(x_1,y_1)\big) = \big((ax_1,ay_1)\big)
+\end{equation}
+Examples of field are $\mathbb{R}, \mathbb{C}, \mathbb{Z}, \mathbb{N}, \mathbb{Q}$.
 \section{Axioms}
-For the set $V$ to form a vector space the operations $+$ and $\cdot$ must conform to the following axioms:
+For the set $V$ to form a vector space the operations $+$ and $\cdot$ must conform to the following 8 axioms:
+\begin{align}
+  \text{Associativity of addition: } &\vec{u}+(\vec{v}+\vec{w}) = (\vec{u}+\vec{v})+\vec{w}\\
+  \text{Commutativity of addition: }&\hat{u}+\hat{v} = \vec{v}+\vec{u}\\
+  \text{Identity element of addition: }&\exists\:\vec{0}\in V \mid \hat{v} + \vec{0} = \hat{v} \:\forall \: \hat{v}\in V\\
+  \text{Inverse element of addition: } &\forall \: \vec{v}\in V\: \exists \: -\vec{v} \mid \vec{v} + -\vec{v}=\vec{0}\\
+  \text{Compatibility of scalar and field multiplication: }& a(b \vec{v}) = (ab) \vec{v}\\
+  \text{Identity element of scale multiplication: }& 1 \vec{v} = \vec{v}\\
+  \text{Distributivity of scalar multiplicatoin w.r.t vector addition: } &a(\vec{v}+\vec{u})= a\vec{v}+a\vec{u}\\
+  \text{Ditributivity of scalar multiplication w.r.t field addition: }&(a+b)\vec{v} = a\vec{v}+b\vec{v}
+\end{align}
 \bibliography{bibrefs}
 \bibliographystyle{ieeetr}
 \end{document}
