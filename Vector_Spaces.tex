@@ -30,7 +30,8 @@ Where $\cdot$ represents scalar multiplication. If $F$ is a complex field then w
 \begin{equation}
 \forall a\in \mathbb{R}  \cdot:\big(a,(x_1,y_1)\big) = \big((ax_1,ay_1)\big)
 \end{equation}
-Examples of field are $\mathbb{R}, \mathbb{C}, \mathbb{Z}, \mathbb{N}, \mathbb{Q}$.
+Examples of field are $\mathbb{R}, \mathbb{C}, \mathbb{Z} \text{ and } \mathbb{Q}$.\\ \\
+Coupling the above we say that a vector space V is over a field F.
 \section{Axioms}
 For the set $V$ to form a vector space the operations $+$ and $\cdot$ must conform to the following 8 axioms:
 \begin{align}
@@ -43,6 +44,26 @@ For the set $V$ to form a vector space the operations $+$ and $\cdot$ must confo
   \text{Distributivity of scalar multiplicatoin w.r.t vector addition: } &a(\vec{v}+\vec{u})= a\vec{v}+a\vec{u}\\
   \text{Ditributivity of scalar multiplication w.r.t field addition: }&(a+b)\vec{v} = a\vec{v}+b\vec{v}
 \end{align}
+\section{Examples}
+\subsection{Coordinates spaces}
+The simplest form a vector space is a field itself giving n tuples $(a_1, a_2, \dots, a_n)$.
+\subsection{Function Space}
+Let V be a vector space over a field F and X be any set. The set $f:X \to V$ are a vector space over F. Typically here $F,V \in \mathbb{R}$ as a common example.
+\begin{align}
+  &f,g:X \to V:\forall x \in X, \forall a \in F\\
+  &(f+g)(x)=f(x)+g(x)\\
+  &(a\cdot f)(x)=a \cdot f(x)
+\end{align}
+If X is also a vector space the set of linear maps $X \to V$ form a vector space over F called $Hom(X,V)$. A special case is the set of linear functions $V \to F$ which form a \textbf{dual} vector space.\\ \\
+\subsection{Integration \cite{wiki:integration}}
+The collectoin of integrable functions form a vector space.
+\begin{align}
+  &f \mapsto \int_a^b f(x) dx\\
+  &\int_a^b (\alpha f + \beta g)(x) dx = \int_a^b (\alpha f(x)+\beta g(x)) dx=\alpha \int_a^b f(x)dx + \beta \int_a^b g(x)dx
+\end{align}
+Since the function itself forms a vector space the integrable function takes the function to the field over which the integration occurs. Since this is $I:V \to F$ it places the integrable functions $(I)$ in the dual vector space.
+\\ \\
+$\square$
 \bibliography{bibrefs}
 \bibliographystyle{ieeetr}
 \end{document}
