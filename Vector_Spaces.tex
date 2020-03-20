@@ -9,8 +9,11 @@
 \date{18 March 2020}
 \begin{document}
 \maketitle
+\begin{abstract}
+  \\\ \\Vector spaces appear in many forms of mathematics. Indeed $\mathbb{R}$ forms a vector space. Vectors are elements of a vector space. Understanding what defines a vector space can lead to some suprising catagorisations of vectos that are not seen in undergraduate mathematics. This paper provides an first touch introduction to the what defines a vector space and some comment elements of a vector space that are encounted in everyday mathematics and physics.
+\end{abstract}
 \section{Introduction}
-A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent directoins is the dimension of the vector space. Two operations are defined on this space $\cdot$ and $+$. This paper describes the basics of vector spaces.
+A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent elements is the dimension of the vector space. Two operations are defined on this space $\cdot$ and $+$. This paper describes the basics of vector spaces.
 \section{Operations $\cdot$ and $+$}
 Let $V$ be an ordered set.
 \label{operations}
@@ -48,7 +51,7 @@ For the set $V$ to form a vector space the operations $+$ and $\cdot$ must confo
 \subsection{Coordinates spaces}
 The simplest form a vector space is a field itself giving n tuples $(a_1, a_2, \dots, a_n)$.
 \subsection{Function Space}
-Let V be a vector space over a field F and X be any set. The set $f:X \to V$ are a vector space over F. Typically here $F,V \in \mathbb{R}$ as a common example.
+Let V be a vector space over a field F and X be any set. Then for $f:X \to V$, the set of f forms a vector space over F. Typically here $F,V \in \mathbb{R}$ as a common example.
 \begin{align}
   &f,g:X \to V:\forall x \in X, \forall a \in F\\
   &(f+g)(x)=f(x)+g(x)\\
@@ -62,6 +65,13 @@ The collectoin of integrable functions form a vector space.
   &\int_a^b (\alpha f + \beta g)(x) dx = \int_a^b (\alpha f(x)+\beta g(x)) dx=\alpha \int_a^b f(x)dx + \beta \int_a^b g(x)dx
 \end{align}
 Since the function itself forms a vector space $f(x) dx$ takes the function to the field over which the integration occurs. Since this is $I:V \to F$ it places $f(x)dx$ $(I)$ in the dual vector space.
+\section {Basis Vectors}
+A set of vectors $B \subseteq V$ (Vector space) over a field $F$ is a linearly independent set that spans $V$ \cite{wiki:basis}. Spans means is able to describe all elements of $V$. Practically these means that all other elements of $V$ can be written as linear function of the elements in $B$.
+\begin{align}
+  &\text{Linear}\implies \forall b \in B, \forall a \in F, \sum_{i=1}^n a_i b_i =0 \implies a_i = 0\\
+  &\text{Spans}\implies \forall v \in V \: \exists \: a \in F, b \in B \mid v = \sum_{i=1}^n a_i b_i
+\end{align}
+As an example, for a vector space of $\mathbb{R}^2$ over field $\mathbb{R}$ the basis vectors are $(1,0)$ and $(0,1)$.
 \\ \\
 $\square$
 \bibliography{bibrefs}
