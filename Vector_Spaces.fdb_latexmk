@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Vector_Spaces"] 1584656482 "Vector_Spaces.aux" "Vector_Spaces.bbl" "Vector_Spaces" 1584657852
+["bibtex Vector_Spaces"] 1584656482 "Vector_Spaces.aux" "Vector_Spaces.bbl" "Vector_Spaces" 1584718163
   "C:/Program Files/MiKTeX 2.9/bibtex/bst/bibtex/ieeetr.bst" 1291864344 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Vector_Spaces.aux" 1584657851 982 79d6c17d615c8b2b5fda5757bce889a7 "pdflatex"
+  "Vector_Spaces.aux" 1584718163 982 79d6c17d615c8b2b5fda5757bce889a7 "pdflatex"
   "bibrefs.bib" 1584656393 1061 88304621e7e5200ed1214020628ced49 ""
   (generated)
   "Vector_Spaces.blg"
   "Vector_Spaces.bbl"
-["pdflatex"] 1584657850 "Vector_Spaces.tex" "Vector_Spaces.pdf" "Vector_Spaces" 1584657852
+["pdflatex"] 1584718163 "Vector_Spaces.tex" "Vector_Spaces.pdf" "Vector_Spaces" 1584718163
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -63,9 +63,9 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/l3backend/l3backend-pdfmode.def" 1582470482 25404 2510469cf40ec483b3c64dfe12ba5655 ""
   "C:/Users/paul/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1583665988 9863303 34faf4a36d06ee95c6da8bad4b6f3f43 ""
   "C:/Users/paul/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1583665967 77580 0902bf85dfadfdef13ad4bb0cb98be38 ""
-  "Vector_Spaces.aux" 1584657851 982 79d6c17d615c8b2b5fda5757bce889a7 "pdflatex"
+  "Vector_Spaces.aux" 1584718163 982 79d6c17d615c8b2b5fda5757bce889a7 "pdflatex"
   "Vector_Spaces.bbl" 1584656482 486 42b08fdd61d70836a7d6484fbde59e63 "bibtex Vector_Spaces"
-  "Vector_Spaces.tex" 1584657850 4092 de304f433c55c777da7dcb38ff322523 ""
+  "Vector_Spaces.tex" 1584718162 4112 be8394817282f442d0ce548b551ca348 ""
   (generated)
   "Vector_Spaces.log"
   "Vector_Spaces.pdf"
