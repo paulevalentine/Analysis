@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1584633428 "Cartesian_Product.tex" "Cartesian_Product.pdf" "Cartesian_Product" 1584633429
+["pdflatex"] 1584693573 "Cartesian_Product.tex" "Cartesian_Product.pdf" "Cartesian_Product" 1584693574
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -63,8 +63,8 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/l3backend/l3backend-pdfmode.def" 1582470482 25404 2510469cf40ec483b3c64dfe12ba5655 ""
   "C:/Users/paul/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1583665988 9863303 34faf4a36d06ee95c6da8bad4b6f3f43 ""
   "C:/Users/paul/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1583665967 77580 0902bf85dfadfdef13ad4bb0cb98be38 ""
-  "Cartesian_Product.aux" 1584633428 441 dd08f57d67f0df8279b9e74d800c2424 "pdflatex"
-  "Cartesian_Product.tex" 1584633427 2533 017d53366b26529d5ddd7ea1accc8f68 ""
+  "Cartesian_Product.aux" 1584693574 441 dd08f57d67f0df8279b9e74d800c2424 "pdflatex"
+  "Cartesian_Product.tex" 1584693573 2614 db11d94a4f59e8bd48fd4f04da92f5ce ""
   (generated)
   "Cartesian_Product.log"
   "Cartesian_Product.aux"
