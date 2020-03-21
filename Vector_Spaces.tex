@@ -4,16 +4,24 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsthm}
 \usepackage{cite}
+\usepackage{graphicx}
 \title{\textbf{Vector Spaces}\\(A003)}
 \author{Paul Valentine}
 \date{18 March 2020}
 \begin{document}
 \maketitle
 \begin{abstract}
-  \\\ \\Vector spaces appear in many forms of mathematics. Indeed $\mathbb{R}$ forms a vector space. Vectors are elements of a vector space. Understanding what defines a vector space can lead to some suprising catagorisations of vectos that are not seen in undergraduate mathematics. This paper provides an first touch introduction to the what defines a vector space and some comment elements of a vector space that are encounted in everyday mathematics and physics.
+  Vector spaces appear in many forms of mathematics. Indeed $\mathbb{R}$ forms a vector space. Vectors are elements of a vector space. Understanding what defines a vector space can lead to some suprising catagorisations of vectos that are not seen in undergraduate mathematics. This paper provides a first touch introduction to what defines a vector space and some common charactoristics of a vector space that are encounted in everyday mathematics and physics.
 \end{abstract}
 \section{Introduction}
-A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. The scaling and addition rules for a vector space form a set of axioms. Roughly speaking, the number of independent elements is the dimension of the vector space. Two operations are defined on this space $\cdot$ and $+$. This paper describes the basics of vector spaces.
+\subsection{Mathematical Spaces}
+A space is a set with some added structure. In some sense the space contains the geometry and the structure its algerbraic nature. Two basic types of space may be considered - Linear Spaces and Topographical Spaces. Linear spaces are algerbraic spaces and form vector spaces. Linear operations in linear spaces provide a notion of straight lines and ellipses but cannot define perpendicular lines or circles from ellipses as there is no definition of an inner product\cite{A004}. The dimension of a vector space is the number miximum number of linearly independent vectos that span the space.\\ \\
+Topological spaces are analytical and give rise to the notion of continuous functions and differentiation. A metric space is a topological space on which a distances between points are defined.\\ \\
+Vectors in a Euclidean space have a length and therefore a norm. These are normed linear spaces that are also topological metric spaces. A inner product space is endowed with a bilinear form $(\langle \cdot, \cdot \rangle : V \times V \to F)$\cite{A004} called an inner product. All inner product spaces are normed spaces. \\ \\
+A Riemannian manifold is a smooth manifold with tangent spaces are inner product spaces. If we lose the positive definit nature of the norm then we have a seminorm delivering a pseudo Riemannian space. This is the form of space defined in special relativity by the Lorentz transforms.
+
+\subsection{Vector Spaces}
+A vector space is a collection of objects called \textbf{vectors} that can be scaled and added together in a linear way. It is therefore a linear space. The scaling and addition rules for a vector space form a set of axioms. Two operations are defined on this space $\cdot$ and $+$. This paper describes the basics of vector spaces.
 \section{Operations $\cdot$ and $+$}
 Let $V$ be an ordered set.
 \label{operations}
@@ -33,7 +41,7 @@ Where $\cdot$ represents scalar multiplication. If $F$ is a complex field then w
 \begin{equation}
 \forall a\in \mathbb{R}  \cdot:\big(a,(x_1,y_1)\big) = \big((ax_1,ay_1)\big)
 \end{equation}
-Examples of fields are $\mathbb{R}, \mathbb{C}, \mathbb{Z} \text{ and } \mathbb{Q}$.\\ \\
+Examples of fields are $\mathbb{R}, \mathbb{C}, \text{ and } \mathbb{Q}$.\\ \\
 Coupling the above we say that a vector space V is over a field F.
 \section{Axioms}
 For the set $V$ to form a vector space the operations $+$ and $\cdot$ must conform to the following 8 axioms:

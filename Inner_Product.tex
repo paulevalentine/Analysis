@@ -6,7 +6,7 @@
 \usepackage{cite}
 \usepackage{hyperref}
 \usepackage{physics}
-\newcommand{\norm}[1]{\lvert \lvert#1\rvert \rvert}
+\newcommand{\norm}[1]{\lvert \lvert #1 \rvert \rvert}
 \newcommand{\inner}[1]{\langle #1 \rangle}
 \title{\textbf{Inner Product Spaces and Normed Vector Spaces}\\(A004)}
 \author{Paul Valentine\\ Email: \href{mailto:paul@the-valentines.co.uk}{paul@the-valentines.co.uk}}
@@ -43,24 +43,29 @@ Under these coordinate transformations the new basis vectors are:
   &\vec{e}_r = \pdv{}{r} rcos(\theta) \vec{e}_x + \pdv{}{r} rsin(\theta) \vec{e}_y = cos(\theta)\vec{e}_x + sin(\theta)\vec{e}_y\label{e1}\\
   &\vec{e}_s = \vec{e}_x\label{e2}
 \end{align}
-Consdier a vector $V$ pointing along $\vec{e}_s$ and vector $W$ pointing along $\vec{e}_r$ such that $\norm{V} = V^s$ and $\norm{W}=W^r$.
+Consdier a vector $\vec{V}$ pointing along $\vec{e}_s$ and vector $\vec{W}$ pointing along $\vec{e}_r$ such that $\norm{\vec{V}} = V^s$ and $\norm{\vec{W}}=W^r$.
 \begin{align}
-  V\cdot W = V^s \vec{e}_s \cdot W^r \vec{e}_r = V^s W^r (\vec{e}_s \cdot \vec{e}_r)\label{e3}
+  \vec{V}\cdot \vec{W} = V^s \vec{e}_s \cdot W^r \vec{e}_r = V^s W^r (\vec{e}_s \cdot \vec{e}_r)\label{e3}
 \end{align}
 From equation \ref{e1} and equation \ref{e2} $\vec{e}_s \cdot \vec{e}_r = cos(\theta)$. Applying this result to equation \ref{e3} yields:
 \begin{equation}
   \label{e4}
-  V.W=\norm{V} \norm{W} \:cos({\theta})
+  \vec{V}.\vec{W}=\norm{\vec{V}} \norm{\vec{W}} \:cos({\theta})
 \end{equation}
-Equation \ref{e4} says $V \cdot V = \norm{V}^2$ and that for $V,W \ne 0 \: V\cdot W = 0 \implies V$ and $W$ are perpendicular vectors. This definition can be carried into other inner product spaces.
+Equation \ref{e4} says $V \cdot V = \norm{V}^2$ and that for $V,W \ne 0 \: V\cdot W = 0 \implies V$ and $W$ are perpendicular vectors. This definition can be carried into other inner product spaces. The length of a vector can be termed the norm (see below) and so $\norm{V} = \sqrt{\inner{V,V}}$.
+\subsection{Real valued functions}
+These form a vector space\cite{A003}. If the domain is a closed interval $[a,b]$ a possible norm is
+\begin{equation}
+  \inner{f,g} = \int_a^b f(x)g(x) dx
+\end{equation}
 \section{Normed Vector Spaces}
 A normed vector space $V$ over a field $F$ is space have a nonnegative valued function, a norm, $p:V \to F$. $p$ has the following axioms.
 \begin{align}
   p(\vec{a}+\vec{b}) \le p(\vec{a})+p(\vec{b})\\
   p(\alpha \vec{a}) = \lvert \alpha \rvert p(\vec{a})\\
-  p(\vec{a})=0 \implies \vec{v} = \vec{0}\label{posdef}
+  p(\vec{a})=0 \implies \vec{a} = \vec{0}\label{posdef}
 \end{align}
-If a function satisfies the above with the acception of equation \ref{posdef} then it is a seminorm. The notation for a norm may be $\norm{\vec{a}}$. Not all normed vector spaces are an inner product space.
+If a function satisfies the above with the acception of equation \ref{posdef} then it is a seminorm. The notation for a norm may be $\norm{\vec{a}}$. Not all normed vector spaces are an inner product spaces but all inner product spaces are normed spaces.
 \subsection{Eucledian Norm}
 The may be referred to as the $L^2$ norm. $L^p$ is a function space defined with a $p$-norm for a finite dimension.
 \begin{equation}
@@ -72,4 +77,11 @@ This is the $L^1$ norm.
   \norm{x}_1 = \sum_{i=1}^n \rvert x_i \lvert
 \end{equation}
 This is simply the absolute sum of the components of the vector.
+\subsection{p-norm}
+The above can be extended to the general definition of a p-norm in $Lp$ space:
+\begin{equation}
+  \norm{x}_p = \left( \sum_{i=1}^n \rvert x_i \lvert^p \right)^{1/p}
+\end{equation}
+\bibliography{bibrefs}
+\bibliographystyle{ieeetr}
 \end{document}
