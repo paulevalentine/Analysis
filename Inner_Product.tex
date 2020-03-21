@@ -1,0 +1,75 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsthm}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{physics}
+\newcommand{\norm}[1]{\lvert \lvert#1\rvert \rvert}
+\newcommand{\inner}[1]{\langle #1 \rangle}
+\title{\textbf{Inner Product Spaces and Normed Vector Spaces}\\(A004)}
+\author{Paul Valentine\\ Email: \href{mailto:paul@the-valentines.co.uk}{paul@the-valentines.co.uk}}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{abstract}
+  A vector space over a feild endowed with additional informatoin on how to take two vectors to the field enables a concept of length and angles to be defined in the vector space. This addition information is the inner product. This paper presents the basic concepts surrounding the inner product on a vector space. Extending from this a normed vector space is discussed representing a concepth of length.
+\end{abstract}
+\section{Definition and Axioms}
+We can define an \textbf{inner product space} as a vector space $V$ over a field $F$ that has an inner product defined. The inner product is a map:
+\begin{equation}
+  \langle \cdot,\cdot \rangle : V \times V \to F
+\end{equation}
+This map must satisfy three properties $\forall v \in V$
+\begin{align}
+  \text{conjugate symmetry:  }&\langle a, b \rangle = \overline{\langle b,a \rangle}\\
+  \text{Linearity:  }&\alpha \langle a,b \rangle = \langle \alpha a,b \rangle, \: \: \alpha \in F\\
+  &\langle a+b,c \rangle = \langle a,c \rangle + \langle b,c \rangle\\
+  \text{Positive definite:  } &\langle a,a \rangle > 0 \: \: \forall a \in V \backslash \vec{0}
+\end{align}
+\subsection{Eucledian Space}
+\begin{equation}
+  a,b \in \mathbb{R}^n, \: \: \inner{a,b} = \sum_{i=1}^n a_i b_i
+\end{equation}
+This is a special case of an inner product in $\mathbb{R}^n$ and is called the dot product. Here  $\inner{a,b} = a \cdot b$.
+\\ \\
+Consider a unit vector $\vec{e}_x$ along the x-axis of a Eucledian plan and $\vec{e}_y$ along the y axis. Here we know that $\vec{e}_i \cdot \vec{e}_j = \delta_i^j$. Rotate $\vec{e}_y$ to an angle $\theta$ form $\vec{e}_x$ to form a new set of basis vectors $\vec{e}_r$ and $\vec{e}_s$.
+\begin{equation}
+  x = r cos(\theta) \qquad y = r sin(\theta)
+\end{equation}
+Under these coordinate transformations the new basis vectors are:
+\begin{align}
+  &\vec{e}_r = \pdv{}{r} rcos(\theta) \vec{e}_x + \pdv{}{r} rsin(\theta) \vec{e}_y = cos(\theta)\vec{e}_x + sin(\theta)\vec{e}_y\label{e1}\\
+  &\vec{e}_s = \vec{e}_x\label{e2}
+\end{align}
+Consdier a vector $V$ pointing along $\vec{e}_s$ and vector $W$ pointing along $\vec{e}_r$ such that $\norm{V} = V^s$ and $\norm{W}=W^r$.
+\begin{align}
+  V\cdot W = V^s \vec{e}_s \cdot W^r \vec{e}_r = V^s W^r (\vec{e}_s \cdot \vec{e}_r)\label{e3}
+\end{align}
+From equation \ref{e1} and equation \ref{e2} $\vec{e}_s \cdot \vec{e}_r = cos(\theta)$. Applying this result to equation \ref{e3} yields:
+\begin{equation}
+  \label{e4}
+  V.W=\norm{V} \norm{W} \:cos({\theta})
+\end{equation}
+Equation \ref{e4} says $V \cdot V = \norm{V}^2$ and that for $V,W \ne 0 \: V\cdot W = 0 \implies V$ and $W$ are perpendicular vectors. This definition can be carried into other inner product spaces.
+\section{Normed Vector Spaces}
+A normed vector space $V$ over a field $F$ is space have a nonnegative valued function, a norm, $p:V \to F$. $p$ has the following axioms.
+\begin{align}
+  p(\vec{a}+\vec{b}) \le p(\vec{a})+p(\vec{b})\\
+  p(\alpha \vec{a}) = \lvert \alpha \rvert p(\vec{a})\\
+  p(\vec{a})=0 \implies \vec{v} = \vec{0}\label{posdef}
+\end{align}
+If a function satisfies the above with the acception of equation \ref{posdef} then it is a seminorm. The notation for a norm may be $\norm{\vec{a}}$. Not all normed vector spaces are an inner product space. 
+\subsection{Eucledian Norm}
+The may be referred to as the $L^2$ norm. $L^p$ is a function space defined with a $p$-norm for a finite dimension.
+\begin{equation}
+  \norm{\vec{x}}_2 = \sqrt{\sum_{i=1}^n (x_i)^2} = \sqrt{\vec{x}\cdot \vec{x}}
+\end{equation}
+\subsection{Manhatton norm}
+This is the $L^1$ norm.
+\begin{equation}
+  \norm{x}_1 = \sum_{i=1}^n \rvert x_i \lvert
+\end{equation}
+This is simply the absolute sum of the components of the vector.
+\end{document}
